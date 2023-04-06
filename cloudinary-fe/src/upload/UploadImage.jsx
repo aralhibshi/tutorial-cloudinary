@@ -6,22 +6,23 @@ function UploadImage() {
   const [file, setFile] = useState([])
   const [fileSelected, setFileSelected] = useState("")
   const [loading, setLoading] = useState(false)
+  // eslint-disable-next-line
   const [res, setRes] = useState({})
 
   const handleSelectFile = (e) => {
     file.length = 0
     setFileSelected("")
-
     if (e.target.files.length === 1) {
       file.push(e.target.files[0])
       setFile(file)
-      setFileSelected("1")
+      // setFileSelected("1")
+      setFileSelected(<center>{file[0].name}</center>)
     }
     else {
       for (let i = 0; i < e.target.files.length; i++) {
         file.push(e.target.files[i])
         setFile(file)
-        setFileSelected(">1")
+        setFileSelected(<center>Multiple Files Selected</center>)
       }
     }
   }
@@ -62,8 +63,7 @@ function UploadImage() {
           select files
         </label>
 
-        {fileSelected === "1" ? <center> {file[0].name}</center> : <></>}
-        {fileSelected === ">1" ? <center>Multiple Files Selected</center> : <></>}
+        {fileSelected}
 
         <input
           id="file"
