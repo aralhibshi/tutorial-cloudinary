@@ -1,9 +1,14 @@
+body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
 .App {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  font-family: "Arial";
   display: grid;
   gap: 2rem;
   padding: 1.5rem;
@@ -32,8 +37,14 @@ button {
   color: #333;
   border: 1px solid #888;
 }
+
 .btn-green {
   background-color: #63dd47;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn-green:hover {
+  box-shadow: inset 0px 0px 0px 2px #4fb438;
 }
 
 p {

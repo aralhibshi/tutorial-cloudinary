@@ -6,7 +6,7 @@ This tutorial will teach you how to upload images to Cloudinary using their API 
 
 ---
 
-## Part 1 - Cloudinary Account, Backend, and Dependencies
+## Part 1 - Cloudinary Account and Backend
 
 - Create a Cloudinary account by clicking on this link: https://cloudinary.com/users/register_free
 - Once you've created an account and logged in, you should be redirected to the **Getting Started** page. Click on **Dashboard** on the left Navbar to view your sensitive API information. You will need this information for your `.env` file in the Backend. If **Dashboard** does not show up, click on **Transformations** which is also on the left Navbar, then **Dashboard** should show up.
