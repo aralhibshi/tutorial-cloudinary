@@ -1,4 +1,4 @@
-# Upload Images to Cloudinary and MongoDB
+# Upload Images to Cloudinary and MongoDB (General Assembly Tutorial)
 
 ***Objective***
 
