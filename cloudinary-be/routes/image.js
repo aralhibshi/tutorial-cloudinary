@@ -10,8 +10,8 @@ const router = express.Router();
 // Cloudinary Service
 const uploadToCloudinary = require('../services/cloudinary')
 
-// Multer Middelware
-const upload = require('../middeleware/upload')
+// Multer Middleware
+const upload = require('../middleware/upload')
 
 // POST - Upload Image
 router.post("/image/upload", upload.any("image"), async (req, res) => {
